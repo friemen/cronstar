@@ -1,4 +1,4 @@
-(defproject cronstar "1.0.0-SNAPSHOT"
+(defproject cronstar "1.0.0"
   :description
   "A cron expression parser and datetime sequence generator"
 
