@@ -23,6 +23,7 @@
   :codox
   {:defaults                  {}
    :sources                   ["src"]
+   :output-path               "docs"
    :exclude                   []
    :src-dir-uri               "https://github.com/friemen/cronstar/blob/master/"
    :src-linenum-anchor-prefix "L"}
