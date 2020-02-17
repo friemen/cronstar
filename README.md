@@ -23,7 +23,7 @@ execution is controlled via cron expressions.
 To use it in your own project add a dependency
 
 ```clojure
-[cronstar "1.0.0"]
+[cronstar "1.0.1"]
 ```
 
 Here's how the main API function can be used:
@@ -67,6 +67,18 @@ Here's how the main API function can be used:
 
 ```
 
+Supported cron syntax:
+
+A cron expression has 5 whitespace separated parts:
+
+```
+minute(0-59)  hour(0-59)  day-of-month(1-31)  month (1-12)  day-of-week (0-7)
+```
+
+Each part can be a list of comma separated numbers, ranges '<from>-<to>' or an
+asterisk '*' character, which means any value is allowed.
+
+A range or the '*' can be followed by '/<stepsize>'.
 
 
 ## Development

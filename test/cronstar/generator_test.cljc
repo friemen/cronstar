@@ -50,7 +50,12 @@
     "0 0 * * 1-5"
     {:day 29 :month 2 :year 2020}
     1
-    '({:minute 0, :hour 0, :day-of-week 1, :day 2, :month 3, :year 2020})))
+    '({:minute 0, :hour 0, :day-of-week 1, :day 2, :month 3, :year 2020})
+
+    "0 0 * * 0"
+    {:day 29 :month 2 :year 2020}
+    1
+    '({:minute 0, :hour 0, :day-of-week 7, :day 1, :month 3, :year 2020})))
 
 
 (deftest test__timeinfo-seq

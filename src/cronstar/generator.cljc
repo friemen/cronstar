@@ -26,7 +26,10 @@
   [schedule]
   (let [allowed-days         (set (ranges->seq schedule :day))
         allowed-months       (set (ranges->seq schedule :month))
-        allowed-days-of-week (set (ranges->seq schedule :day-of-week))]
+        allowed-days-of-week (set (ranges->seq schedule :day-of-week))
+        allowed-days-of-week (if (allowed-days-of-week 0)
+                               (conj allowed-days-of-week 7)
+                               allowed-days-of-week)]
     (fn [{:keys [day day-of-week month] :as timeinfo}]
       (boolean
        (and (allowed-days day)
@@ -45,7 +48,6 @@
                     (t/plus dt (t/days 1))))
          (map datetime/to-timeinfo)
          (filter allowed-date?))))
-
 
 
 (defn time-seq
