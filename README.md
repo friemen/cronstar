@@ -75,10 +75,10 @@ A cron expression has 5 whitespace separated parts:
 minute(0-59)  hour(0-59)  day-of-month(1-31)  month (1-12)  day-of-week (0-7)
 ```
 
-Each part can be a list of comma separated numbers, ranges '<from>-<to>' or an
+Each part can be a list of comma separated numbers, ranges `from`'-'`to` or an
 asterisk '*' character, which means any value is allowed.
 
-A range or the '*' can be followed by '/<stepsize>'.
+A range or the '*' can be followed by '/'`stepsize`.
 
 
 ## Development
@@ -96,7 +96,7 @@ REPL connection to Javas Nashorn JS Engine.
 
 ## License
 
-Copyright © 2019 F.Riemenschneider
+Copyright © 2020 F.Riemenschneider
 
 This program and the accompanying materials are made available under the
 terms of the Eclipse Public License 2.0 which is available at
