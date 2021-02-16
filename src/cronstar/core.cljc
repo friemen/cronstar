@@ -1,6 +1,8 @@
 (ns cronstar.core
   "Main API functions for generating DateTime sequences."
   (:require
+   #?(:clj [clj-time.core :as t]
+      :cljs [cljs-time.core :as t])
    [cronstar.parser :as cron-parser]
    [cronstar.generator :as cron-gen]
    [cronstar.datetime :as cron-datetime]))
@@ -16,5 +18,6 @@
 
   ([cron-expr datetime]
    (let [schedule (cron-parser/parse cron-expr)]
-     (cron-gen/datetime-seq schedule
-                            (cron-datetime/to-timeinfo datetime)))))
+     (->> (cron-datetime/to-timeinfo datetime)
+          (cron-gen/datetime-seq schedule)
+          (drop-while #(t/after? datetime %))))))
