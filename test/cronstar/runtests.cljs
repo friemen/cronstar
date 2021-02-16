@@ -3,7 +3,8 @@
    [cljs.test :as t :include-macros true]
    [cronstar.parser-test]
    [cronstar.match-test]
-   [cronstar.generator-test]))
+   [cronstar.generator-test]
+   [cronstar.core-test]))
 
 ;; settings to support execution on Nashorn engine
 (set! *print-fn* js/print)
@@ -16,3 +17,4 @@
 (t/run-tests 'cronstar.parser-test)
 (t/run-tests 'cronstar.match-test)
 (t/run-tests 'cronstar.generator-test)
+(t/run-tests 'cronstar.core-test)

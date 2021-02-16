@@ -1,10 +1,14 @@
 (ns cronstar.core-test
-  (:require
-   [cronstar.core :as cronstar]
-   #?(:clj [clojure.test :refer :all]
-      :cljs [cljs.test :refer :all :include-macros true])
-   #?(:clj [clj-time.core :as t]
-      :cljs [cljs-time.core :as t])))
+  #?(:clj
+     (:require
+      [clojure.test :refer :all]
+      [clj-time.core :as t]
+      [cronstar.core :as cronstar])
+     :cljs
+     (:require
+      [cljs.test :refer-macros [deftest is are testing run-tests]]
+      [cljs-time.core :as t]
+      [cronstar.core :as cronstar])))
 
 (deftest test__times
   (is (= 12
