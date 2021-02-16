@@ -23,7 +23,7 @@ execution is controlled via cron expressions.
 To use it in your own project add a dependency
 
 ```clojure
-[cronstar "1.0.1"]
+[cronstar "1.0.2"]
 ```
 
 Here's how the main API function can be used:
