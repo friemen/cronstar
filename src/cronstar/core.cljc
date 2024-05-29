@@ -21,3 +21,12 @@
      (->> (cron-datetime/to-timeinfo datetime)
           (cron-gen/datetime-seq schedule)
           (drop-while #(t/after? datetime %))))))
+
+
+;; In the REPL
+
+(comment
+  (->> (times "*/5 8-18 * * 1-5")
+       (take 10))
+
+  ,,,)

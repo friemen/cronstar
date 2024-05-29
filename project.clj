@@ -1,4 +1,4 @@
-(defproject cronstar "1.0.2"
+(defproject cronstar "1.0.3-SNAPSHOT"
   :description
   "A cron expression parser and datetime sequence generator"
 
@@ -10,7 +10,7 @@
    :url  "https://www.eclipse.org/legal/epl-2.0/"}
 
   :dependencies
-  [[org.clojure/clojure "1.9.0"]
+  [[org.clojure/clojure "1.10.3"]
    [clj-time "0.15.2"]
    [com.andrewmcveigh/cljs-time "0.5.2"]]
 
@@ -33,7 +33,7 @@
    {:source-paths
     ["dev"]
     :dependencies
-    [[org.clojure/clojurescript "1.9.946"]
+    [[org.clojure/clojurescript "1.10.866"]
      [cider/piggieback "0.4.2"]]
     :repl-options
     {:nrepl-middleware [cider.piggieback/wrap-cljs-repl]}}

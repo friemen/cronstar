@@ -1,9 +1,8 @@
 (ns user
   (:require
-   [cider.piggieback]
-   [cljs.repl.nashorn]))
-
+   [cljs.repl.node]
+   [cider.piggieback]))
 
 (defn cljs-repl
   []
-  (cider.piggieback/cljs-repl (cljs.repl.nashorn/repl-env)))
+  (cider.piggieback/cljs-repl (cljs.repl.node/repl-env)))
