@@ -10,7 +10,7 @@
    :url  "https://www.eclipse.org/legal/epl-2.0/"}
 
   :dependencies
-  [[org.clojure/clojure "1.10.3"]
+  [[org.clojure/clojure "1.12.1"]
    [clj-time "0.15.2"]
    [com.andrewmcveigh/cljs-time "0.5.2"]]
 
@@ -18,29 +18,28 @@
   {"cljstest" ["with-profile" "cljs" "cljsbuild" "test" "unittests"]}
 
   :plugins
-  [[lein-codox "0.10.7"]]
+  [[lein-codox "0.10.8"]]
 
   :codox
-  {:defaults                  {}
-   :sources                   ["src"]
-   :output-path               "docs"
-   :exclude                   []
-   :src-dir-uri               "https://github.com/friemen/cronstar/blob/master/"
-   :src-linenum-anchor-prefix "L"}
+  {:language     :clojure
+   :source-paths ["src"]
+   :namespaces   [#"^cronstar"]
+   :output-path  "docs"
+   :source-uri   "https://github.com/friemen/cronstar/blob/master/{filepath}#L{line}"}
 
   :profiles
   {:dev
    {:source-paths
     ["dev"]
     :dependencies
-    [[org.clojure/clojurescript "1.10.866"]
-     [cider/piggieback "0.4.2"]]
+    [[org.clojure/clojurescript "1.12.42"]
+     [cider/piggieback "0.6.0"]]
     :repl-options
     {:nrepl-middleware [cider.piggieback/wrap-cljs-repl]}}
 
    :cljs
    {:dependencies
-    [[org.clojure/clojurescript "1.9.946"]]
+    [[org.clojure/clojurescript "1.12.42"]]
 
     :plugins
     [[lein-cljsbuild "1.1.7"]]

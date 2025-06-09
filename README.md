@@ -7,7 +7,7 @@ instances in Clojure or ClojureScript.
 
 [![Clojars Project](http://clojars.org/cronstar/latest-version.svg)](http://clojars.org/cronstar)
 
-[API docs](https://friemen.github.com/cronstar)
+[API docs](https://friemen.github.io/cronstar)
 
 
 ## Usage
@@ -67,7 +67,7 @@ Here's how the main API function can be used:
 
 ```
 
-Supported cron syntax:
+## Supported cron syntax:
 
 A cron expression has 5 whitespace separated parts:
 
@@ -96,7 +96,7 @@ REPL connection to Javas Nashorn JS Engine.
 
 ## License
 
-Copyright © 2020 F.Riemenschneider
+Copyright © 2020-2025 F.Riemenschneider
 
 This program and the accompanying materials are made available under the
 terms of the Eclipse Public License 2.0 which is available at
