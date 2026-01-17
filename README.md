@@ -3,8 +3,6 @@
 Parse cron expression and generate a sequence of future DateTime
 instances in Clojure or ClojureScript.
 
-[![Build Status](https://travis-ci.org/friemen/cronstar.png?branch=master)](https://travis-ci.org/friemen/cronstar)
-
 [![Clojars Project](http://clojars.org/cronstar/latest-version.svg)](http://clojars.org/cronstar)
 
 [API docs](https://friemen.github.io/cronstar)
@@ -96,7 +94,7 @@ REPL connection to Javas Nashorn JS Engine.
 
 ## License
 
-Copyright © 2020-2025 F.Riemenschneider
+Copyright © 2020-2026 F.Riemenschneider
 
 This program and the accompanying materials are made available under the
 terms of the Eclipse Public License 2.0 which is available at

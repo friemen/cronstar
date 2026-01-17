@@ -10,7 +10,7 @@
    :url  "https://www.eclipse.org/legal/epl-2.0/"}
 
   :dependencies
-  [[org.clojure/clojure "1.12.1"]
+  [[org.clojure/clojure "1.12.4"]
    [clj-time "0.15.2"]
    [com.andrewmcveigh/cljs-time "0.5.2"]]
 
@@ -32,14 +32,14 @@
    {:source-paths
     ["dev"]
     :dependencies
-    [[org.clojure/clojurescript "1.12.42"]
-     [cider/piggieback "0.6.0"]]
+    [[org.clojure/clojurescript "1.12.134"]
+     [cider/piggieback "0.6.1"]]
     :repl-options
     {:nrepl-middleware [cider.piggieback/wrap-cljs-repl]}}
 
    :cljs
    {:dependencies
-    [[org.clojure/clojurescript "1.12.42"]]
+    [[org.clojure/clojurescript "1.12.134"]]
 
     :plugins
     [[lein-cljsbuild "1.1.7"]]
@@ -64,5 +64,6 @@
    :url  "https://github.com/friemen/cronstar"}
 
   :repositories
-  [["clojars" {:url   "https://clojars.org/repo"
-               :creds :gpg}]])
+  [["clojars"
+    {:url   "https://clojars.org/repo"
+     :creds :gpg}]])
